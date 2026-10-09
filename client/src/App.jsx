@@ -3,7 +3,7 @@ import EmergencyMap from "./EmergencyMap";
 import "./App.css";
 
 // CHANGE THESE IF YOUR BACKEND USES ANOTHER PORT OR ROUTE
-const API_BASE = "http://localhost:3000";
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:3000";
 const ANALYZE_PATH = "/api/analyze";
 
 const STORAGE_KEY = "saferoute-incidents";
